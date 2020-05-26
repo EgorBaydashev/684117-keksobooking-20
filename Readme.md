@@ -2,7 +2,6 @@
 
 * Студент: [Егор Байдашев](https://up.htmlacademy.ru/javascript/20/user/684117).
 * Наставник: [Дмитрий Железцов](https://htmlacademy.ru/profile/id983299).
-
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
