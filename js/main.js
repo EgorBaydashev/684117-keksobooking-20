@@ -14,6 +14,7 @@ var GUESTS = [1, 2, 3];
 var CHECKIN = ['12:00', '13:00', '14:00'];
 var CHECKOUT = ['12:00', '13:00', '14:00'];
 var FEATURES = ['wifi', 'dishwasher', 'parking', 'washer', 'elevator', 'conditioner'];
+var DESCRIPTION = 'Лучший вариант на сегодняшний день!';
 var PHOTOS = ['http://o0.github.io/assets/images/tokyo/hotel1.jpg', 'http://o0.github.io/assets/images/tokyo/hotel2.jpg', 'http://o0.github.io/assets/images/tokyo/hotel3.jpg'];
 var PIN_X_OFFSET = 50;
 var PIN_Y_OFFSET = 70;
@@ -26,7 +27,7 @@ var getRandomValueFromArray = function (arr) {
   return arr[getRandomNumber(0, arr.length - 1)];
 };
 
-function getArrRandomLength(arr) {
+var getArrRandomLength = function (arr) {
   var result = [];
   var j = getRandomNumber(1, arr.length);
   for (var i = 0; i < j; i++) {
@@ -34,7 +35,7 @@ function getArrRandomLength(arr) {
     result.push(element);
   }
   return result;
-}
+};
 
 var getData = function () {
   var randomArr = [];
@@ -54,7 +55,7 @@ var getData = function () {
         checkin: getRandomValueFromArray(CHECKIN),
         checkout: getRandomValueFromArray(CHECKOUT),
         features: getArrRandomLength(FEATURES),
-        description: 'Лучший вариант на сегодняшний день!',
+        description: DESCRIPTION,
         photos: getArrRandomLength(PHOTOS)
       },
       location: {
